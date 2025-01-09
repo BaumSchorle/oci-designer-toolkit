@@ -48,7 +48,7 @@ RUN yum install -y \
  && echo "Branch: $BRANCH" \
  && git clone --branch $BRANCH --single-branch \
             --config core.autocrlf=input \ 
-            https://github.com/oracle/oci-designer-toolkit.git /github/oci-designer-toolkit \
+            https://github.com/BaumSchorle/oci-designer-toolkit.git /github/oci-designer-toolkit \
  && mkdir -p /okit/{git,local,log,instance/git,instance/local,instance/templates/user,workspace,ssl} \
  && mkdir -p /root/bin \
  && ln -sv /github/oci-designer-toolkit/config /okit/config \
